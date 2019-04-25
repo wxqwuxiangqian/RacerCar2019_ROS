@@ -1,8 +1,10 @@
+%running in a car
 ssh sz@192.168.5.101
 roslaunch art_racecar Run_car.launch
 roslaunch art_racecar Run_gmapping.launch
 rosrun art_racecar racecar_teleop.py
 
+%runing in a local computer
 
 roslaunch art_racecar rviz.launch
 
