@@ -1,0 +1,11 @@
+ssh sz@192.168.5.101
+roslaunch art_racecar Run_car.launch
+roslaunch art_racecar Run_gmapping.launch
+rosrun art_racecar racecar_teleop.py
+
+
+roslaunch art_racecar rviz.launch
+
+source /devel/setup.sh
+source art_rviz.sh
+roslaunch art_racecar rviz.launch
