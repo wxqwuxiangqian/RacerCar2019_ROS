@@ -1,17 +1,56 @@
 用于配置环境和入门测试基本程序
-1、上网站http://www.wmcollege.club/
+第0步，预先准备
+1、上网站http://www.wmcollege.club/看比赛相关介绍视频
+2、看学长和刘理老师给的官方文档
+3、学会用git和QQ，下载基本资料
 
-流程
+注意
+1.看这些视频，因为学长参加比赛，必须要看这些入门视频，包括linux视频和python入门，ROS入门。所以当你们有问题时，你们可以有人问
+2.刘理老师买了实物，你们要做实验时，有实物可以操控
 
-第一步：配置笔记本的操作系统（用于熟悉ubuntu安装）
+
+第一步：安装笔记本的操作系统（用于熟悉ubuntu安装）
 1.在window下安装vmware(软件如何下载和安装，自己百度。破解版在公用电脑上)
 2.启动vmware安装ubuntu16.04(如何安装，自己百度。系统安装盘在公用电脑上)
-3.进去ubuntu准备配置环境（如何进入使用ubuntu,自己上五门学院学习。http://www.wmcollege.club/）
+
+方法
+看视频http://www.wmcollege.club/里面有各种视频
 
 注意：
-1.刘理已经在公用电脑上安装好一个操作系统
+1.刘理老师已经在公用电脑上安装好一个操作系统
 2.可以用葵花远程控制，在任何地方控制这个公用电脑。（如何用葵花远程控制，自己学以及找刘理老师学）
+3.安装好系统之后一定要运行，sudo apt update,sudo apt upgrade这两个命令
 
-第二步：配置小车的ubuntu系统。（与第一步大部分一致）
-1.看视频http://www.wmcollege.club/uc/play/199/703
-2.
+第二步：配置小车的ubuntu系统和路由器。
+1.因为小车上已经安装好纯净的ubuntu系统以及刘理老师已经按照官方视频和文档按照好系统和路由器，所有看看资料就可以了
+
+方法
+看视频http://www.wmcollege.club/uc/play/199/703
+用我给出的官方文档《ROS竞赛小车使用说明》《ART_Racer软件配置说明》，并学会用git
+
+注意：
+1.不要改变小车上系统的官方的配置（尤其是用户名和IP）,避免多人共同使用后出问题
+
+第三步，按照《ROS竞赛小车使用说明》《ART_Racer软件配置说明》的文档，笔记本电脑
+1.按照两个文档配置电脑
+2.运行《ART_Racer软件配置说明》运行建立地图（3.gmapping构建地图）和运行导航（4.导航）
+
+方法
+看视频http://www.wmcollege.club/uc/play/199/703
+用我给出的官方文档《》《ROS》《ART_Racer软件配置说明》，并学会用git
+
+注意
+1.配置过程如果出了无法理解的问题，运行，sudo apt update,sudo apt upgrade这两个命令
+2.在运行 ./install.sh这条命令后笔记本的ubuntu可能会出问题，试一试注意1的两条命令。如果出问题，再问学长学姐和刘理老师
+3.《ROS竞赛小车使用说明》中有个命令“Source 工作空间” 等于在”~/racecar”目录下运行catkin_make命令和source devel/setup.bash命令。
+
+参考《创建一个ROS工作空间（ROS Workspace）》中的步骤5和步骤6https://www.cnblogs.com/huangjianxin/p/6347416.html
+
+第四步，找对应学长问，用QQ和git下载资料
+简单来说：
+有事找学长，学长比刘理老师强
+有时间自学，自学比找学长问强
+
+git地址
+https://github.com/lukeliuli/RacerCar2019_ROS.git
+git clone https://github.com/lukeliuli/RacerCar2019_ROS.git
